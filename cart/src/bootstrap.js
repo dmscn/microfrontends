@@ -1,0 +1,1 @@
+document.querySelector('#_cart_mfe_').innerHTML = '<h1>Hello from Cart MFE</h1>'

@@ -4,7 +4,7 @@
   "description": "Shell application for a microfrontend structure",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "webpack serve"
   },
   "keywords": [
     "microfrontends",

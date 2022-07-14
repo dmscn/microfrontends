@@ -1,0 +1,1 @@
+document.querySelector('#_products_mfe_').innerHTML = '<h1>Hello from Products MFE</h1>'

@@ -1,1 +1,1 @@
-console.log('hello from cart mfe')
+import('./bootstrap')

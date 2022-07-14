@@ -1,1 +1,1 @@
-console.log('hello from shell app')
+import('./bootstrap')
