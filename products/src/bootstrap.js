@@ -1,1 +1,5 @@
-document.querySelector('#_products_mfe_').innerHTML = '<h1>Hello from Products MFE</h1>'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+
+ReactDOM.render(<App />, document.getElementById('_products_mfe_'));
