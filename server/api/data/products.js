@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker'
 
 const { datatype, commerce, image } = faker;
 
-export default Array.from({ length: 2 }).map(() => ({
+export default Array.from({ length: 200 }).map(() => ({
   id: datatype.uuid(),
   title: commerce.productName(60, 2000),
   price: commerce.price(),

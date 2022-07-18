@@ -1,5 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App.js';
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App"
 
-ReactDOM.render(<App />, document.getElementById('_products_mfe_'));
+const root = ReactDOM.createRoot(document.getElementById("_products_mfe_"))
+root.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+)
