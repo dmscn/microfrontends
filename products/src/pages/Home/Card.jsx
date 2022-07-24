@@ -5,7 +5,7 @@ import { Box, Image, Text } from "@chakra-ui/react"
 export default function Card({ product }) {
 	const { title, price, description, imageUrl } = product
 	return (
-		<Box w="300px" borderWidth="1px" borderRadius="lg" overflow="hidden" bg="white">
+		<Box w="300px" h="100%" borderWidth="1px" borderRadius="lg" overflow="hidden" bg="white" boxShadow="lg">
 			<Image src={imageUrl} alt={title}/>
 			<Box padding='20px'>
 				<Text as="h3" fontSize="lg" fontWeight="600">{title}</Text>

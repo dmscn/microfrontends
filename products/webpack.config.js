@@ -1,6 +1,7 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin")
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 	mode: "development",
@@ -34,7 +35,11 @@ module.exports = {
 				use: {
 					loader: "eslint-loader",
 				}
-			}
+			},
+			{
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
 		]
 	},
 	resolve: {
@@ -50,6 +55,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: "./public/index.html",
-		})
+		}),
+		new Dotenv()
 	]
 }
