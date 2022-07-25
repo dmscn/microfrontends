@@ -15,7 +15,7 @@ export default function Home() {
 
 
 	return (
-		<Wrap spacing="20px" padding="lg" justify="space-evenly" bg="gray.50" shouldWrapChildren>
+		<Wrap spacing="20px" p="20px" justify="space-evenly" bg="gray.50" shouldWrapChildren>
 			{data.map(p => <Card key={p.title} product={p}/> )}
 		</Wrap>
 	)
